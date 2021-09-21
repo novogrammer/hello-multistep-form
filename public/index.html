@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <style>
+    </style>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+  </head>
+  <body>
+    <form method="POST" action="/foo">
+      <div class="stepBox" data-step="0">
+        <input type="text" name="a" placeholder="a" />
+        <input type="button" value="next" class="next">
+      </div>
+      <div class="stepBox" data-step="1">
+        <input type="text" name="b" placeholder="b" />
+        <input type="button" value="back" class="back">
+        <input type="button" value="next" class="next">
+      </div>
+      <div class="stepBox" data-step="2">
+        <input type="text" name="c" placeholder="c" />
+        <input type="button" value="back" class="back">
+        <input type="button" value="next" class="next">
+      </div>
+      <div class="stepBox" data-step="3">
+        <input type="text" name="d" placeholder="d" />
+        <input type="button" value="back" class="back">
+        <input type="submit" value="Submit" />
+      </div>
+      <div class="stepBox" data-step="4">
+        <div class="resultArea"></div>
+      </div>
+    </form>
+  </body>
+</html>

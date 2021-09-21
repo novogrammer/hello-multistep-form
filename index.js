@@ -1,12 +1,8 @@
 const express = require('express')
 const app = express()
-// body-parser
 app.use(express.urlencoded({ extended: true }))
-// static built-in middleware
 app.use(express.static('public'))
-// GET /foo
-app.post('/foo', (req, res) => {
-  console.log('--- post() /foo called ---')
+app.post('/serverside-a', (req, res) => {
   console.log(req.body);
   res.json(req.body);
 })

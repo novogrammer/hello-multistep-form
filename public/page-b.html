@@ -2,17 +2,17 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <title>ページA</title>
+    <title>ページB</title>
     <style>
     </style>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-    <script src="./assets/js/page-a.js"></script>
+    <script src="./assets/js/page-b.js"></script>
   </head>
   <body>
     formをdivで分割し、順番に表示している。<br>
     History APIにより戻るボタン、進むボタンにも対応。<br>
-    結果画面もJavaScriptのパターン。
-    <form class="form" method="POST" action="/serverside-a">
+    結果画面はサーバーサイドで生成のパターン。
+    <form class="form" method="POST" action="/serverside-b">
       <div class="stepBox" data-step="0">
         <input type="text" name="a" placeholder="a" />
         <input type="button" value="next" class="next">
@@ -31,10 +31,6 @@
         <input type="text" name="d" placeholder="d" />
         <input type="button" value="back" class="back">
         <input type="submit" value="Submit" />
-      </div>
-      <div class="stepBox" data-step="4">
-        <h2>クライアントサイドによる結果画面</h2>
-        <div class="resultArea"></div>
       </div>
     </form>
   </body>
